@@ -47,7 +47,7 @@
   <script>
    (function () {
 
-function a(){if(b)return c.username;if(12<=d){var g=e.loadString(20);""===g&&(g="Android User "+Math.floor(1E3*Math.random()),e.saveString(20,g))}else 5<=d?(g=e.loadString(0),""===g&&(g="Player "+Math.floor(1E3*Math.random()),e.saveString(0,g))):g=f.g(0);return g}function h(){i=Math.floor(1+Math.random()*(Math.pow(2,30)-1));if(b)i=c.id;else if(12<=d){var g=e.loadNumber(20);-1===g?e.saveNumber(20,i):i=g}else 5<=d?(g=e.loadNumber(2),2===g?e.saveNumber(2,i+3):i=g-3):i=f.g(1)}
+function a(){if(b)return c.username;if(12<=d){var g=e.loadString(20);""===g&&(g="[KOR] Android User "+Math.floor(1E3*Math.random()),e.saveString(20,g))}else 5<=d?(g=e.loadString(0),""===g&&(g="[KOR] Player "+Math.floor(1E3*Math.random()),e.saveString(0,g))):g=f.g(0);return g}function h(){i=Math.floor(1+Math.random()*(Math.pow(2,30)-1));if(b)i=c.id;else if(12<=d){var g=e.loadNumber(20);-1===g?e.saveNumber(20,i):i=g}else 5<=d?(g=e.loadNumber(2),2===g?e.saveNumber(2,i+3):i=g-3):i=f.g(1)}
 
 function j(){var g=0;if(b)g=c.password;else if(12<=d)g=e.loadString(22);else{if(5<=d)return g;g=f.g(9)}var k=Math.floor(Math.pow(2,48));g=Math.floor(parseInt(m.n(g)));if(0<g&&g<k)return g;g=Math.floor(1+(k-1)*Math.random());return o(g)?g:0}function p(){if(b)q=c.zoom||r<s;else if(12<=d){var g=e.loadNumber(21);-1===g?(q=100>=e.getNumber(0)||r<s,e.saveNumber(21,q?1:0)):q=1===g||r<s}else 5<=d?(g=e.loadNumber(1),2===g?(q=!0,e.saveNumber(1,q?1:0)):q=1===g):q=0===f.g(4)||r<s}
 
@@ -737,7 +737,7 @@ function jO(){var g;dY=0;for(g=b8-1;0<=g;g--)0!==fB[g]&&dY++;dZ=new Uint16Array(
 
 function ik(){var g,k=0;for(g=dY-1;0<=g;g--)k+=ax[dZ[g]];return k%4096}var oy,cH,a1d,a1e,r,s,pB,bq,gA,cB,pF,a1f,b,c,e,d,q,a1g=!1,a1h,a1i,i,gu,sf,h4,a5,b0,hn,vV,c4,dW,eP,cD,fe,vd,nN,uH,a1j,a1k,a1l=0,a1m="",a1n=!1;
 
-function a1o(){a1k=2;a1e=4262;a1d="1.82.9   2 December 2022";jq();d8();a1n=!0;d=(e="undefined"!==typeof Android?Android:null)?e.getVersion():0;12<=d&&e.prepareAd("6685097465");b=!1;window.webkit&&window.webkit.messageHandlers&&window.webkit.messageHandlers.iosCommandA&&(b=!0,window.webkit.messageHandlers.iosCommandA.postMessage("prepare ad 5907904081"),c="undefined"!==typeof mwIOSdataX?mwIOSdataX:{username:"iOS User "+Math.floor(1E3*Math.random()),id:Math.floor(1+Math.random()*(Math.pow(2,30)-1)),
+function a1o(){a1k=2;a1e=4262;a1d="1.82.9   2 December 2022";jq();d8();a1n=!0;d=(e="undefined"!==typeof Android?Android:null)?e.getVersion():0;12<=d&&e.prepareAd("6685097465");b=!1;window.webkit&&window.webkit.messageHandlers&&window.webkit.messageHandlers.iosCommandA&&(b=!0,window.webkit.messageHandlers.iosCommandA.postMessage("prepare ad 5907904081"),c="undefined"!==typeof mwIOSdataX?mwIOSdataX:{username:"[KOR] iOS User "+Math.floor(1E3*Math.random()),id:Math.floor(1+Math.random()*(Math.pow(2,30)-1)),
 
 zoom:!0,sound:!0,emojis:"0",colors:"0",password:"0",freeSpawn:!1,unlimitedTime:!1,alliances:!1});a1j=(new Date).getTime()%1024;a1h=a1p();jj.bp();f.bp();h();p();aD();document.addEventListener?document.addEventListener("contextmenu",function(g){g.preventDefault()},!1):document.attachEvent("oncontextmenu",function(){window.event.returnValue=!1});a1q();document.addEventListener("keyup",a1r);document.addEventListener("keydown",a1s);document.addEventListener("visibilitychange",a1t);window.addEventListener("error",
 
