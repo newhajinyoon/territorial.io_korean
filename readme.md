@@ -21,6 +21,7 @@ territorial.io의 한글패치
 ![image](https://user-images.githubusercontent.com/61103309/210180871-5c3d0c27-e1a6-4918-9488-0238af779338.png)
 ![image](https://user-images.githubusercontent.com/61103309/210180889-33eb3cf1-d86d-4b58-a999-0909fb967c76.png)
 ![image](https://user-images.githubusercontent.com/61103309/210180904-5ff63677-919a-4b0f-b7ea-3694efc1adc0.png)
+![image](https://user-images.githubusercontent.com/61103309/210180938-ce931c41-a039-4a54-bbf3-9c13fd8175d8.png)
 
 
 
