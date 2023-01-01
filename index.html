@@ -861,7 +861,7 @@ function a1T(){function g(){}function k(){e9.a1U(z,y)}function x(E){A++;1===A?C.
 
 n;F.onerror=t};this.a4x=function(){return F.readyState===F.CONNECTING};this.vB=function(){return F.readyState===F.OPEN};this.a1Q=function(){return this.a4x()||this.vB()};this.a1R=function(E){y=E};this.send=function(E){this.vB()&&F.send(E)};this.close=function(E){this.a1Q()&&(F.close(E),this.lA())};this.lA=function(){F.onopen=g;F.onmessage=g;F.onclose=g;F.onerror=g;C.removeEventListener("loadend",l)}}
 
-function a1x(){this.cV=501;this.a53=new Uint32Array(this.cV);this.rz=new Uint32Array(this.cV);this.tM=new Uint16Array(this.cV);this.lz=0;this.a54=1;this.dV=0;this.max=[0,0,0];this.b1=0;this.a55="平均攻击强度;攻击次数;船舶发送数;机器人征服数;玩家征服数;受机器人攻击数;受玩家攻击数;领土损失率;领土收入;利息收入;获得的支持;总收入;指挥成本;攻击损失;防御损失;船舶损失;传播支持数;总损失数".split(";");
+function a1x(){this.cV=501;this.a53=new Uint32Array(this.cV);this.rz=new Uint32Array(this.cV);this.tM=new Uint16Array(this.cV);this.lz=0;this.a54=1;this.dV=0;this.max=[0,0,0];this.b1=0;this.a55="평균 공격 강도;공격 횟수;선박 송신 수;로봇 정복 수;플레이어 정복 수;로봇 공격 수;플레이어 공격 수;영토 손실률;영토 수입;이자 수입;지원 획득;총 수익;지휘 비용;공격 손실;방어 손실;선박 손실;전파 지원 수;총 손실 수".split(";");
 
 this.bp=function(){this.lz=0;this.a54=1;this.dV=0;this.a56();this.a57()};this.dF=function(){0<this.dV--||this.a58()};this.a58=function(){0!==fB[aw]&&(this.a53[this.lz]=bU[aw],this.rz[this.lz]=ax[aw],this.tM[this.lz]=ay.tN(aw),this.a59(this.lz),this.lz++,this.lz===this.cV&&this.a5A(),this.dV=this.a54-1,hn.bv())};this.a5A=function(){this.a56();this.a59(0);this.lz=1+as(this.cV,2);for(var g=1;g<this.lz;g++)this.a53[g]=this.a53[2*g],this.rz[g]=this.rz[2*g],this.tM[g]=this.tM[2*g],this.a59(g);this.a54*=
 
