@@ -16,7 +16,39 @@ function(H){for(var M=F.length-1;0<=M;M--)F[M].id===H&&(F[M].gc=1)};this.fl=func
 
 "rgba(10,60,40,0.9)",-1,!1)};this.iH=function(H,M,Q,R){1===eD.n2()&&(A(0,H[0].name+": "+ij.iF(H[0].iC)+" -> "+M,66,0,cK,R[0],-1,!1),A(0,H[1].name+": "+ij.iF(H[1].iC)+" -> "+Q,66,1,cK,R[1],-1,!1))};this.io=function(H){1===eD.n2()&&A(0,"["+H+"] 이(가) "+cq+(jE?" x 2":"")+" 포인트를 얻었습니다!",45,0,"rgb(225,240,255)",hy,-1,!1)};this.la=function(H,M){0===M?E(50,H)?(A(128,"당신은 "+gI[H]+"와(과) 함께 불가침 조약에 서명했습니다.",52,H,C(180,255,180),hy,-1,!0),eA.n4(H,2,255)):A(384,"당신은 "+gI[H]+" 에게 불가침 조약에 서명해달라고 요청했습니다.",
 
-51,H,C(210,210,255),hy,-1,!0):E(51,H)?(A(128,gI[H]+" 이(가) 불가침 조약에 서명했습니다.",52,H,cK,"rgba(60,120,10,0.9)",-1,!0),eA.n4(H,2,255)):(A(384,gI[H]+" 이(가) 불가침 조약에 서명해달라고 요청합니다.",50,H,cK,"rgba(90,90,90,0.9)",-1,!0),eA.n4(H,2,96))};this.lR=function(H,M){var Q="You ",R;a:{for(R=H.length-1;0<=R;R--)if(2*bU[H[R]]>bU[aw]){R=!1;break a}R=!0}R?(Q+="ordered ",R=C(255,235,210)):(Q+="asked ",R=C(210,255,210));1<H.length?A(230,Q+H.length+" players to attack "+gI[M]+".",66,M,R,hy,-1,!0):A(230,Q+gI[H[0]]+
+51,H,C(210,210,255),hy,-1,!0):E(51,H)?(A(128,gI[H]+" 이(가) 불가침 조약에 서명했습니다.",52,H,cK,"rgba(60,120,10,0.9)",-1,!0),eA.n4(H,2,255)):(A(384,gI[H]+" 이(가) 불가침 조약에 서명해달라고 요청합니다.",50,H,cK,"rgba(90,90,90,0.9)",-1,!0),eA.n4(H,2,96))};this.lR=function(H,M){var Q="당신은 ",R;a:{for(R=H.length-1;0<=R;R--)if(2*bU[H[R]]>bU[aw]){R=!1;break a}R=!0}R?(Q+=" ",R=C(255,235,210)):(Q+=" ",R=C(210,255,210));1<H.length?A(230,Q+H.length+" 들에게 "+gI[M]+"을(를) 공격해달라고 요청했습니다.",66,M,R,hy,-1,!0):A(230,Q+gI[H[0]]+
+
+" 에게 "+gI[M]+"를 공격해달라고 요청했습니다.",66,H[0],R,hy,M,!0)};this.n7=function(H,M){bU[H]>2*bU[aw]?A(230,gI[H]+" 이(가) 당신에게 "+gI[M]+"을(를) 공격하라고 지시합니다!",66,H,cK,"rgba(90,50,5,0.9)",M,!0):A(230,gI[H]+" 이(가) 당신에게"+gI[M]+"을(를) 공격해달라고 요청합니다.",66,H,cK,"rgba(75,65,5,0.9)",M,!0)};this.n9=function(H,M){E(H,M)};this.lU=function(){100<=ax[aw]||A(80,"군사력이 너무 낮습니다!",9,0,cK,hy,-1,!1)};this.lT=function(){A(80,"1분동안 부스트가 금지되었습니다.",9,0,cK,hy,-1,!1)};this.nA=function(H,M){2!==fT[aw]&&A(200,"당신은 "+eP.gJ(H)+
+
+" "+(1===H?"":"s")+" 만큼의 군사력을 "+gI[M]+"에게 지원했습니다.",30,M,"rgb(190,255,190)",hy,-1,!0)};this.nC=function(H,M){if(2!==fT[aw]){var Q=2===fT[M]||M>=cq;var R=200-20*F.length;A(80>R?80:R,(Q?"봇":gI[M])+" 이 당신에게 "+eP.gJ(H)+" 만큼의 군사력을 지원했습니다."+(1===H?"":"s")+".",31,M,gH,Q?"rgba(205,205,205,0.9)":"rgba(205,255,205,0.9)",-1,!0);B(31,q?4:6)}};this.iy=function(H){var M,Q=c4.dU();for(M=2;0<=M;M--)0<l[M]&&(H||x[M]<Q-220)&&this.nN(M)};this.nN=function(H){var M=l[H];var Q=g[H];l[H]=0;1===M?(M=gI[Q]+z[H],0===H&&(M+=
+
+gI[k[H]]+"."),A(n[H],M,7,k[H],cK,hy,-1,!0)):2<=M&&(M=gI[Q]+" 와(과) "+(M-1)+" 명의 다른 플레이어"+(2===M?"":"들")+t[H],A(n[H],M,7,Q,cK,hy,-1,!1))};this.ml=function(H,M,Q){var R=c4.dU(),P=l[H]+1;l[H]++;g[H]=M;k[H]=Q;1===P&&(x[H]=R);1===P&&(32>ix||2===fZ)?this.nN(H):1<P&&(x[H]<R-140||2===fZ)&&this.nN(H)};this.dF=function(){var H,M=F.length-K;M=1>=M?1:M*M;for(H=F.length-1;0<=H;H--)0<F[H].gc&&(F[H].gc-=M,0>=F[H].gc&&F.splice(H,1));if(128!==J&&(J++,!(128>J)))for(H=5,M=dY-1;0<=M;M--)1===fT[dZ[M]]&&0<H--&&A(240,gI[dZ[M]]+
+
+" 이(가) 게임에 참여했습니다.",1,dZ[M],gH,"rgba(255,255,255,0.75)",-1,!0);this.iy(!1)};this.cG=function(){for(var H=y(),M,Q=F.length-1;0<=Q;Q--)M=H-(Q+1)*G,50===F[Q].id?(cH.drawImage(F[Q].ls,gE-F[Q].c1-D-N,M),cH.drawImage(L,gE-D-N,M)):cH.drawImage(F[Q].ls,gE-F[Q].c1-N,M)}}
+
+
+
+
+
+R=!1;for(Q=F.length-1;0<=Q;Q--)F[Q].id!==H||M!==b8&&F[Q].player!==M||(F.splice(Q,1),R=!0);return R}var F,G,N,I,D,K,J,L;this.bp=function(){J=0;K=q?7:12;g=[0,0,0];k=[0,0,0];n=[220,180,180];l=[0,0,0];x=[0,0,0];t=[" were conquered."," left the game."," surrendered."];z=[" was conquered by "," left the game."," surrendered."];F=[];this.lx();fc&&this.fl(0,18);var H="Map: "+jm.nF()+"   Pixels: "+eP.gJ(jQ.nG)+"   Land: "+eP.gJ(jQ.nH)+" ("+eB.nI(100*jQ.nH/jQ.nG,1)+")",M="";0<jQ.nK&&(M+="Water: "+eP.gJ(jQ.nK)+
+
+" ("+eB.nI(100*jQ.nK/jQ.nG,1)+")");0<jQ.nL&&(M+=0<jQ.nK?"   ":"",M+="Mountains: "+eP.gJ(jQ.nL)+" ("+eB.nI(100*jQ.nL/jQ.nG,1)+")");A(340,H,6,0,C(215,245,255),hy,-1,!1);0<M.length&&A(340,M,6,0,C(215,245,255),hy,-1,!1);10===dv&&A(120,"Full sending against human players is disabled.",6,0,C(235,255,120),hy,-1,!1);this.mR()};this.mR=function(){var H;if(dr.ds){var M=dr.dt.mS.length;for(H=0;H<M;H++)A(400,dr.dt.mS[H],6,0,C(255,255,255),hy,-1,!1)}};this.lx=function(){var H;G=Math.floor((q?.031:.0249)*bq);G=
+
+10>G?10:G;this.by=Math.floor(2*G/3);this.c0=bt+this.by+bu;N=m7;I=Math.floor(G/5);if(0<F.length){var M=F;F=[];for(H=M.length-1;0<=H;H--)A(M[H].gc,M[H].l,M[H].id,M[H].player,M[H].mW,M[H].mX,M[H].mY,M[H].mZ)}this.ma()};this.ma=function(){L=document.createElement("canvas");D=c2.measureText("Accept",this.c0)+5*I;L.height=G;L.width=D;var H=L.getContext("2d",{alpha:!0});H.font=this.c0;H.textBaseline=cI;H.textAlign=cJ;H.clearRect(0,0,D,G);H.fillStyle=mb;H.fillRect(0,0,D,G);H.fillStyle=cK;H.fillText("Accept",
+
+Math.floor(D/2),Math.floor(G/2))};this.mc=function(){if(eS.lE)return eS.c1;var H=F.length;return 0===H?0:1===H?F[0].md:me(F[0].md,F[1].md)};this.c7=function(H,M){for(var Q=y(),R,P=F.length-1;0<=P;P--)if(R=Q-(P+1)*G,M>=R&&M<R+G){if(50===F[P].id){if(H>=gE-D-N-F[P].c1)return H>=gE-D-N?(P=F[P].player,this.la(P,0),ir.lb(P)):eV.gg(F[P].player,800,!1,0),!0;break}if(H>=gE-F[P].c1-N)return F[P].mZ&&(eV.gg(F[P].player,800,!1,0),0<=F[P].mY&&(Q=F[P].mY,F[P].mY=F[P].player,F[P].player=Q)),!0;break}return!1};this.j3=
+
+function(H){for(var M=F.length-1;0<=M;M--)F[M].id===H&&(F[M].gc=1)};this.fl=function(H,M){0===M?(b0.b1[H<cq?4:3]++,c2.cQ(H,0),A(q?100:160,"You conquered "+gI[H]+".",0,H,"rgb(10,220,10)",hy,-1,!1)):1===M?(E(50,b8),c2.cQ(H,1),A(360,"You were conquered by "+gI[H]+".",0,H,"rgb(255,40,40)",hy,-1,!0),eV.gg(H,2700,!0,0)):2===M?(c2.cQ(H,2),A(0,"축하합니다! 게임에서 승리하셨습니다",0,H,"rgb(10,255,255)",hy,-1,!0),eV.gg(H,2700,!0,0)):3===M?(c2.cQ(H,2),A(0,gI[H]+" won the game.",0,H,cK,hy,-1,!0),eV.gg(H,2700,
+
+!0,0)):4===M?(ix--,iw--,this.ml(1,H,H)):5===M?2!==fT[H]&&hu.lG(aw)&&(B(1,5),eA.mn(H)?A(180,gI[H]+" has broken the non-aggression pact and invades you!",1,H,C(255,200,180),hy,-1,!0):A(180,gI[H]+" is attacking you!",1,H,"rgb(255,70,10)",hy,-1,!0)):18===M?A(255,"당신의 시작지점을 선택하세요!",18,0,cK,hy,-1,!1):21===M?A(220,"당신은 항복했습니다!",M,0,"rgb(255,40,40)",hy,-1,!1):22===M&&this.ml(2,H,H)};this.mo=function(H){A(200,"Error ["+H+"]",94,0,cK,mq,-1,!1)};this.iq=function(H){c2.cQ(H,2);100>cq?A(0,gI[H]+
+
+" won the game.",3,H,cK,hy,-1,!0):A(0,gI[H]+" has been immortalized!",3,H,cK,hy,-1,!0);eV.gg(H,2700,!0,0)};this.mr=function(H,M,Q){H===aw?A(175," Message to "+gI[M]+": ",1E3+Q,M,C(200,255,210),hy,-1,!0):this.mu(H,Q)};this.mu=function(H,M){var Q,R=0;A(175,gI[H]+": ",1E3+M,H,cK,"rgba(5,60,25,0.9)",-1,!0);for(Q=0;Q<F.length;Q++)if(1E3<=F[Q].id&&F[Q].player===H&&(R++,3<R)){F.splice(Q,1);break}};this.ip=function(H){var M=dW.im[eT.my()];H?(9===dv?(H="The Resistance defeated the virus.",c2.mz("The Resistance",
+
+2,1,12)):H="Congratulations! Team "+dW.bo[M]+" has won the game!",A(0,H,40,0,"rgb(10,220,10)",hy,-1,!1)):(9===dv?(H="Mankind lost the war against the virus.",c2.mz("The Virus",2,0,16)):H="Our alliance has been defeated!",A(0,H,41,0,"rgb(200,80,80)",hy,-1,!1));9!==dv&&c2.mz("Team "+dW.bo[M],2,1,12);eV.gp(2700)};this.i9=function(H){A(300,H[0].name+" ["+ij.iF(H[0].iC)+"] vs "+H[1].name+" ["+ij.iF(H[1].iC)+"]",65,0,gH,"rgba(100,255,255,0.75)",-1,!1)};this.n0=function(H){A(200,H,0,0,"rgb(40,255,200)",
+
+"rgba(10,60,40,0.9)",-1,!1)};this.iH=function(H,M,Q,R){1===eD.n2()&&(A(0,H[0].name+": "+ij.iF(H[0].iC)+" -> "+M,66,0,cK,R[0],-1,!1),A(0,H[1].name+": "+ij.iF(H[1].iC)+" -> "+Q,66,1,cK,R[1],-1,!1))};this.io=function(H){1===eD.n2()&&A(0,"["+H+"] has won "+cq+(jE?" x 2":"")+" 포인트를 얻었습니다!",45,0,"rgb(225,240,255)",hy,-1,!1)};this.la=function(H,M){0===M?E(50,H)?(A(128,"You signed a non-aggression pact with "+gI[H]+".",52,H,C(180,255,180),hy,-1,!0),eA.n4(H,2,255)):A(384,"You asked "+gI[H]+" to sign a non-aggression pact.",
+
+51,H,C(210,210,255),hy,-1,!0):E(51,H)?(A(128,gI[H]+" accepted the non-aggression pact.",52,H,cK,"rgba(60,120,10,0.9)",-1,!0),eA.n4(H,2,255)):(A(384,gI[H]+" requests a non-aggression pact.",50,H,cK,"rgba(90,90,90,0.9)",-1,!0),eA.n4(H,2,96))};this.lR=function(H,M){var Q="You ",R;a:{for(R=H.length-1;0<=R;R--)if(2*bU[H[R]]>bU[aw]){R=!1;break a}R=!0}R?(Q+="ordered ",R=C(255,235,210)):(Q+="asked ",R=C(210,255,210));1<H.length?A(230,Q+H.length+" players to attack "+gI[M]+".",66,M,R,hy,-1,!0):A(230,Q+gI[H[0]]+
 
 " to attack "+gI[M]+".",66,H[0],R,hy,M,!0)};this.n7=function(H,M){bU[H]>2*bU[aw]?A(230,gI[H]+" orders you to attack "+gI[M]+"!",66,H,cK,"rgba(90,50,5,0.9)",M,!0):A(230,gI[H]+" asks you to attack "+gI[M]+".",66,H,cK,"rgba(75,65,5,0.9)",M,!0)};this.n9=function(H,M){E(H,M)};this.lU=function(){100<=ax[aw]||A(80,"군사력이 너무 낮습니다!",9,0,cK,hy,-1,!1)};this.lT=function(){A(80,"1분동안 부스트가 금지되었습니다.",9,0,cK,hy,-1,!1)};this.nA=function(H,M){2!==fT[aw]&&A(200,"You exported "+eP.gJ(H)+
 
@@ -25,12 +57,6 @@ function(H){for(var M=F.length-1;0<=M;M--)F[M].id===H&&(F[M].gc=1)};this.fl=func
 gI[k[H]]+"."),A(n[H],M,7,k[H],cK,hy,-1,!0)):2<=M&&(M=gI[Q]+" and "+(M-1)+" other player"+(2===M?"":"s")+t[H],A(n[H],M,7,Q,cK,hy,-1,!1))};this.ml=function(H,M,Q){var R=c4.dU(),P=l[H]+1;l[H]++;g[H]=M;k[H]=Q;1===P&&(x[H]=R);1===P&&(32>ix||2===fZ)?this.nN(H):1<P&&(x[H]<R-140||2===fZ)&&this.nN(H)};this.dF=function(){var H,M=F.length-K;M=1>=M?1:M*M;for(H=F.length-1;0<=H;H--)0<F[H].gc&&(F[H].gc-=M,0>=F[H].gc&&F.splice(H,1));if(128!==J&&(J++,!(128>J)))for(H=5,M=dY-1;0<=M;M--)1===fT[dZ[M]]&&0<H--&&A(240,gI[dZ[M]]+
 
 " joined the game.",1,dZ[M],gH,"rgba(255,255,255,0.75)",-1,!0);this.iy(!1)};this.cG=function(){for(var H=y(),M,Q=F.length-1;0<=Q;Q--)M=H-(Q+1)*G,50===F[Q].id?(cH.drawImage(F[Q].ls,gE-F[Q].c1-D-N,M),cH.drawImage(L,gE-D-N,M)):cH.drawImage(F[Q].ls,gE-F[Q].c1-N,M)}}
-
-
-
-
-
-
 
 
 
